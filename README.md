@@ -109,5 +109,3 @@ aws ecs create-service \
 ---
 
 ✅ Risk Job API is now running on ECS Fargate and accessible via ALB or DNS.
-
-```
