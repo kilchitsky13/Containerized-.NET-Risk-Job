@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Risk_Job.Domain.Interfaces;
+using Risk_Job.Domain.Models;
 
 namespace Risk_Job.API.Controllers;
 
@@ -22,6 +23,8 @@ public class RiskJobController : ControllerBase
     }
 
     [HttpGet("run-risk-job")]
+    [ProducesResponseType(StatusCodes.Status200OK)]
+    [Produces<IEnumerable<BorrowerRisk>>()]
     public IActionResult Get()
     {
         _logger.LogInformation("Risk job started.");
