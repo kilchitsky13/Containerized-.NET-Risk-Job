@@ -107,12 +107,6 @@ aws ecs create-service \
 * **Logs/metrics** in CloudWatch.
 
 ---
-
-✅ Risk Job API is now running on ECS Fargate and accessible via ALB or DNS.
-
-Nice 👍 You’re asking about **observability** (CloudWatch Logs) and **secure configuration management** (Secrets Manager & Parameter Store). These three services are central when deploying apps (like your .NET risk job API) on ECS. Let’s break it down.
-
----
 # Describe how you would use CloudWatch Logs, AWS Secrets Manager, and Systems Manager Parameter Store for observability and secure configuration.
 
 ## 📊 CloudWatch Logs → Observability
